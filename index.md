@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## Welcome Scala Scripting How To.
 
-You can use the [editor on GitHub](https://github.com/LaranIkal/scalascripting/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Let's try to keep this site the simplest possible and directly to the point.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The first thing to do to start using Scala as a scripting language is:
 
-### Markdown
+- To have Scala installed: https://www.scala-lang.org  
+- To know the Scala language, at least as a beginner, this site may help: https://www.tutorialspoint.com/scala/index.htm
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Very important to remember: The point here is just to show you samples of different things possible to do using Scala as Scripting Language.
 
-```markdown
-Syntax highlighted code block
+Before starting, you need a good scripting editor, here some posibilities:
+  - https://atom.io
+  - https://code.visualstudio.com
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LaranIkal/scalascripting/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
