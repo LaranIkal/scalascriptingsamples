@@ -1,5 +1,0 @@
-Starting Function OpenFileWithLog.
-The Name of Our file: data/agenda.json
-Open file: data/agenda.json
-Printing records from file.
-There are problems printing file data/agenda.json: java.util.NoSuchElementException: key not found: 1

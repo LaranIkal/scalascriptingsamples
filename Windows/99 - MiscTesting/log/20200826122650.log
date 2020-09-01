@@ -1,5 +1,0 @@
-Starting Function OpenFileWithLog.
-The Name of Our file: data/agenda.json
-Open file: data/agenda.json
-Printing records from file.
-There are problems printing file data/agenda.json: ujson.Value$InvalidData: Expected ujson.Arr (data: {"Agenda":{"1":{"First Name":"Laran","Last Name":"Ikal","Age":33,"Mobile":"+5213366987451"},"2":{"First Name":"Carlos","Last Name":"Kassab","Age":35,"Mobile":"+5213366987444"},"3":{"First Name":"Sofía","Last Name":"Quin","Age":40,"Mobile":"+5213362587444"}}})
