@@ -1,0 +1,4 @@
+Starting Function OpenFileWithLog.
+The Name of Our file: data/agenda1.csv
+Open file: data/agenda1.csv
+There are problems printing file data/agenda1.csv: java.io.FileNotFoundException: data\agenda1.csv (The system cannot find the file specified)

@@ -1,0 +1,1 @@
+SELECT title, description FROM EPLSITE_PAGES_CATEGORIES 

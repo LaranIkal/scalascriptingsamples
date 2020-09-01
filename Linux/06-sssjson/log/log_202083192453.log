@@ -1,0 +1,4 @@
+Starting Function OpenFileWithLog.
+The Name of Our file: data/agenda1.json
+Open file: data/agenda1.json
+There are problems printing file data/agenda1.json: java.io.FileNotFoundException: data\agenda1.json (The system cannot find the file specified)

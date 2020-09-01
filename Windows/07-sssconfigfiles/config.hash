@@ -1,0 +1,10 @@
+################################################################################
+# Title: Config file for scala scripting sample etl process
+# Author: Carlos Kassab
+# August/27/2020
+################################################################################
+
+sourcedbtype -> csvfile
+sourcedbinfo -> data/agenda.csv
+                             
+

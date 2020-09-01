@@ -1,0 +1,8 @@
+Starting Function OpenFileWithLog.
+The Name of Our file: data/agenda.csv
+Open file: data/agenda.csv
+Loading file to an array.
+Printing file data to screen using array by value.
+Open file: data/agenda.csv
+Loading file to an array.
+Printing file data to screen using array by reference.

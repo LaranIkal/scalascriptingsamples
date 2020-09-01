@@ -1,0 +1,18 @@
+################################################################################
+# Title: Config file for scala scripting sample etl process
+# Author: Carlos Kassab
+# August/27/2020
+################################################################################
+
+# Keep log files a week.
+numDaysToKeepLogFiles -> 8
+
+sourcedbtype -> sqlite
+sourcedbinfo -> jdbc:sqlite:data/EplSite.sqlite
+
+targetdbtype -> csvfile
+targetdbinfo -> data/EplSiteModules.csv
+                             
+targetdbtype2 -> csvfile
+targetdbinfo2 -> data/EplSitePagesCategories.csv
+
