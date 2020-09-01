@@ -1,4 +1,4 @@
-# Welcome Scala Scripting How To.
+# Welcome Scala Scripting Samples.
 
 Let's try to keep this site the simplest possible and directly to the point.
 
