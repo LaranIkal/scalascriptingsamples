@@ -25,7 +25,7 @@ object ReadPagesCategories {
   }
 
   // Data structure to store our retrieved records.
-  case class PagesCatData( var title: Array[String], var description: Array[String] )
+  private case class PagesCatData( var title: Array[String], var description: Array[String] )
 
 
 
@@ -36,7 +36,7 @@ object ReadPagesCategories {
   * Date: 08/29/2020
   *
   *****************************************************************************/
-  def DataExtraction(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection, pagesCatDataRef: Int => PagesCatData): Unit = {
+  private def DataExtraction(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection, pagesCatDataRef: Int => PagesCatData): Unit = {
 
     log.write(s"Get sql query from file:queries/pagescategories.sql.\n")
     val queryString = Utils.GetSqlQueryFromFile("queries/pagescategories.sql")
@@ -62,7 +62,7 @@ object ReadPagesCategories {
   * Date: 08/31/2020
   *
   *****************************************************************************/
-  def AfterDataExtraction(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection, pagesCatDataRef: Int => PagesCatData): Unit = {
+  private def AfterDataExtraction(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection, pagesCatDataRef: Int => PagesCatData): Unit = {
 
     log.write(s"Writing data to file:${sssConfig("targetdbinfo2")}\n")
     val dataFilePointer = new PrintWriter(new File(sssConfig("targetdbinfo2")))

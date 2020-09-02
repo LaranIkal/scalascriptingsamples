@@ -25,7 +25,7 @@ object ReadEplSiteModules {
   }
 
   // Data structure to store our retrieved records.
-  case class ModulesData( var title: Array[String], var sactive: Array[Int] )
+  private case class ModulesData( var title: Array[String], var sactive: Array[Int] )
 
 
 
@@ -36,7 +36,7 @@ object ReadEplSiteModules {
   * Date: 08/29/2020
   *
   *****************************************************************************/
-  def DataExtraction(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection, modulesDataRef: Int => ModulesData): Unit = {
+  private def DataExtraction(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection, modulesDataRef: Int => ModulesData): Unit = {
 
     log.write(s"Get sql query from file:queries/modules.sql.\n")
     val queryString = Utils.GetSqlQueryFromFile("queries/modules.sql")
@@ -62,7 +62,7 @@ object ReadEplSiteModules {
   * Date: 08/31/2020
   *
   *****************************************************************************/
-  def AfterDataExtraction(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection, modulesDataRef: Int => ModulesData): Unit = {
+  private def AfterDataExtraction(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection, modulesDataRef: Int => ModulesData): Unit = {
 
     log.write(s"Writing data to file:${sssConfig("targetdbinfo")}\n")
     val dataFilePointer = new PrintWriter(new File(sssConfig("targetdbinfo")))
