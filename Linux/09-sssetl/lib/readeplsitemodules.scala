@@ -18,14 +18,15 @@ import scala.collection.mutable.Map
 object ReadEplSiteModules {
 
   def ReadModules(log: java.io.PrintWriter, sssConfig: Map[String, String], dbConn: Connection): Try[Unit] = Try {
-    val modulesData = ModulesData(Array(""),Array(0))
+    val modulesData = ModulesData(Vector(""), Vector(0))
     val modulesDataRef = (x: Int) => modulesData      
     DataExtraction(log, sssConfig, dbConn, modulesDataRef)
     AfterDataExtraction(log, sssConfig, dbConn, modulesDataRef)
   }
 
   // Data structure to store our retrieved records.
-  private case class ModulesData( var title: Array[String], var sactive: Array[Int] )
+  // Using an immutable collection called Vector of type Any(can contain any data type)
+  private case class ModulesData( var title: Vector[Any], var sactive: Vector[Any] )
 
 
 
@@ -68,7 +69,7 @@ object ReadEplSiteModules {
     val dataFilePointer = new PrintWriter(new File(sssConfig("targetdbinfo")))
     dataFilePointer.write("Title, IsActive\n")
     for( titleNum <- 1 to (modulesDataRef(1).title.length - 1)) {
-      dataFilePointer.write(modulesDataRef(1).title(titleNum) + "," + modulesDataRef(1).sactive(titleNum) + "\n")
+      dataFilePointer.write(modulesDataRef(1).title(titleNum).toString + "," + modulesDataRef(1).sactive(titleNum) + "\n")
       println(s"Title Num: $titleNum - ${modulesDataRef(1).title(titleNum)}")
     }
     dataFilePointer.close
