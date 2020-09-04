@@ -50,7 +50,8 @@ object ReadPagesCategories {
       pagesCatDataRef(1).title = pagesCatDataRef(1).title :+ resultSet.getString(1)
       pagesCatDataRef(1).description = pagesCatDataRef(1).description :+ resultSet.getString(2)
     }
-
+    resultSet.close()
+    statement.close()
   }
 
 

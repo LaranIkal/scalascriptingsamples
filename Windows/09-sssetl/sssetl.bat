@@ -4,7 +4,9 @@ call scala ^
  -i lib/utils.scala ^
  -i lib/readeplsitemodules.scala ^
  -i lib/readpagescategories.scala ^
- -i sssetl.scala -classpath ".;jdbclib/sqlite-jdbc-3.32.3.2.jar" %0 %*
+ -i lib/readeplsitereportgroups.scala ^
+ -i lib/readeplsitereports.scala ^
+ -i sssetl.scala -deprecation -classpath ".;jdbclib/sqlite-jdbc-3.32.3.2.jar" %0 %*
 goto :eof 
 ::!# 
 
@@ -12,6 +14,7 @@ goto :eof
 // Download sqlite JDBC from:
 // https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.32.3.2/
 // copy sqlite JDBC to jdbclib directory.
+
 
 // Checking arguments
 if( args.length < 1 ) {
@@ -23,7 +26,7 @@ if( args.length < 1 ) {
     SssEtl.Main(args)  
 }  
 
-
+// -i lib/readeplsitereportgroups.scala ^ 
 
 object Usage {
 
@@ -31,7 +34,10 @@ object Usage {
   val usage = """Usage: sssetl.bat <processnumber(s) separated by blank space> 
   - 10: Modules
   - 20: Pages Categories
+  - 30: Report Groups
+  - 40: EplSite Reports
   - 99: All Processes
+  Note. The last two examples are more Scala best practices.
   """ 
   
   println(usage)

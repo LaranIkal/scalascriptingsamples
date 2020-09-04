@@ -2,6 +2,7 @@
 # Title: Config file for scala scripting sample etl process
 # Author: Carlos Kassab
 # August/27/2020
+# September/04/2020, Carlos Kassab, Adding Reports And Report Groups.
 ################################################################################
 
 # Keep log files a week.
@@ -16,3 +17,8 @@ targetdbinfo -> data/EplSiteModules.csv
 targetdbtype2 -> csvfile
 targetdbinfo2 -> data/EplSitePagesCategories.csv
 
+targetdbtype3 -> csvfile
+targetdbinfo3 -> data/EplSiteReportGroups.csv
+
+targetdbtype4 -> csvfile
+targetdbinfo4 -> data/EplSiteReports.csv

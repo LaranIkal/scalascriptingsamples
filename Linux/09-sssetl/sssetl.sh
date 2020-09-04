@@ -3,6 +3,8 @@ exec scala \
  -i lib/utils.scala \
  -i lib/readeplsitemodules.scala \
  -i lib/readpagescategories.scala \
+ -i lib/readeplsitereportgroups.scala \
+ -i lib/readeplsitereports.scala \
  -i sssetl.scala -deprecation -classpath ".:jdbclib/sqlite-jdbc-3.32.3.2.jar" "$0" "$@"
 !#
 
@@ -30,7 +32,10 @@ object Usage {
   val usage = """Usage: sssetl.sh <processnumber(s) separated by blank space> 
   - 10: Modules
   - 20: Pages Categories
+  - 30: Report Groups
+  - 40: EplSite Reports
   - 99: All Processes
+  Note. The last two examples are more Scala best practices.
   """ 
   
   println(usage)

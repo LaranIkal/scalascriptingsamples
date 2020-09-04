@@ -51,7 +51,8 @@ object ReadEplSiteModules {
       modulesDataRef(1).title = modulesDataRef(1).title :+ resultSet.getString(1)
       modulesDataRef(1).sactive = modulesDataRef(1).sactive :+ resultSet.getInt(2)
     }
-
+    resultSet.close()
+    statement.close()
   }
 
 

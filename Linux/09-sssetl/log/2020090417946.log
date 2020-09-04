@@ -1,0 +1,22 @@
+Delete old log files, keeping: 8 days.
+Open db connection, if success, the process continues.
+Get sql query from file:queries/modules.sql.
+Execute query:
+SELECT title, active FROM eplsite_modules
+
+Writing data to file:data/EplSiteModules.csv
+Get sql query from file:queries/pagescategories.sql.
+Execute query:
+SELECT title, description FROM EPLSITE_PAGES_CATEGORIES 
+
+Writing data to file:data/EplSitePagesCategories.csv
+Get sql query from file:queries/reportgroups.sql.
+Execute query:
+SELECT ReportGroupID, ReportGroupDescription FROM eplsite_report_groups
+
+Writing data to file:data/EplSiteReportGroups.csv
+Get sql query from file:queries/reportgroups.sql.
+Execute query:
+SELECT ReportGroupID, ReportGroupDescription FROM eplsite_report_groups
+
+Writing data to file:data/EplSiteReports.csv

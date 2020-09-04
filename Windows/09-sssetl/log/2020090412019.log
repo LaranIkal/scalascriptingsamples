@@ -1,0 +1,7 @@
+Delete old log files, keeping: 8 days.
+Open db connection, if success, the process continues.
+Get sql query from file:queries/reportgroups.sql.
+Execute query:
+SELECT ReportGroupID, ReportGroupDescription FROM eplsite_report_groups
+
+Writing data to file:data/EplSiteReports.csv

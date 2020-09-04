@@ -10,3 +10,13 @@ Execute query:
 SELECT title, description FROM EPLSITE_PAGES_CATEGORIES 
 
 Writing data to file:data/EplSitePagesCategories.csv
+Get sql query from file:queries/reportgroups.sql.
+Execute query:
+SELECT ReportGroupID, ReportGroupDescription FROM eplsite_report_groups
+
+Writing data to file:data/EplSiteReportGroups.csv
+Get sql query from file:queries/reportgroups.sql.
+Execute query:
+SELECT ReportGroupID, ReportGroupDescription FROM eplsite_report_groups
+
+Writing data to file:data/EplSiteReports.csv

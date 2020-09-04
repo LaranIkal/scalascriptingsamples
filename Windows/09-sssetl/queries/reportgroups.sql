@@ -1,0 +1,1 @@
+SELECT ReportGroupID, ReportGroupDescription FROM eplsite_report_groups

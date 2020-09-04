@@ -1,7 +1,0 @@
-Delete old log files, keeping: 8 days.
-Open db connection, if success, the process continues.
-Get sql query from file:queries/modules.sql.
-Execute query:
-SELECT title, active FROM eplsite_modules
-
-Writing data to file:data/EplSiteModules.csv
