@@ -17,3 +17,8 @@ Before starting, you need a good scripting editor, here some posibilities:
 https://atom.io
 
 https://code.visualstudio.com
+
+Other Scala Scripting Initiatives: 
+
+http://ammonite.io/#ScalaScripting
+
